@@ -1,0 +1,103 @@
+/* ------------------------------
+   Global Reset / Body Styles
+--------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lexend', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ------------------------------
+   Loader Styles
+--------------------------------*/
+.loader-box {
+  width: 180px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* hides spinning border outside box */
+}
+
+.loader-box img {
+  width: 95%;
+  height: 95%;
+  z-index: 2;
+}
+
+/* Spinning border effect */
+.border-runner::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: conic-gradient(
+    transparent 0%, 
+    rgb(208, 73, 0) 100%, 
+    rgb(208, 73, 0) 100%
+  );
+  animation: borderRunEmerging 1.5s linear infinite;
+}
+
+@keyframes borderRunEmerging {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------
+   Story Cards
+--------------------------------*/
+.story-card {
+  position: relative;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.story-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 1024px) {
+  .story-card {
+    height: 420px;
+  }
+}
+
+
+button {
+  transition: none !important;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  color: white;
+}
+
+.btn-green {
+  background-color: #00a65a;
+  border: 2px solid #00a65a;
+  color: white;
+}
+
+.btn-red {
+  background-color: #d9534f;
+  border: 2px solid #d9534f;
+  color: white;
+}
