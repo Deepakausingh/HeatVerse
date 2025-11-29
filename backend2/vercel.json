@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "builds": [
-    { "src": "api/stories.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/api/stories", "dest": "/api/stories.js" }
-  ]
-}

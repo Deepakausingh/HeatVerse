@@ -1,9 +1,0 @@
-{
-  "name": "stories-backend",
-  "version": "1.0.0",
-  "type": "module",
-  "dependencies": {
-    "pg": "8.11.3",
-    "dotenv": "16.4.0"
-  }
-}
