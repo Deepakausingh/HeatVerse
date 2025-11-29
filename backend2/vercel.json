@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "functions": {
+    "api/stories.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    { "src": "/api/stories", "dest": "/api/stories.js" }
+  ]
+}
