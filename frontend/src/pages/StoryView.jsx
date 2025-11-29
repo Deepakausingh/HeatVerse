@@ -54,7 +54,7 @@ export default function StoryView() {
       <div className="max-w-3xl w-full bg-black p-4 border border-gray-800 shadow-2xl space-y-4 ">
 
         {/* Title */}
-        <h1 className="text-3xl font-bold text-center">{story.title}</h1>
+        <h1 className="dm-serif-display-regular text-3xl font-extrabold text-center font">{story.title}</h1>
 
         {/* Cover Image */}
         {story.cover_image && (
@@ -68,7 +68,7 @@ export default function StoryView() {
         {/* Story Page Content */}
         <div
           key={currentPage} 
-          className="story-content text-gray-300 text-lg leading-relaxed animate-fade"
+          className="story-content dm-serif-display-regular text-gray-300 text-lg leading-relaxed animate-fade"
           dangerouslySetInnerHTML={{ __html: pages[currentPage] }}
         ></div>
 

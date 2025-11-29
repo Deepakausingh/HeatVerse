@@ -1,18 +1,38 @@
-/* ------------------------------
-   Global Reset / Body Styles
---------------------------------*/
+/* --------------------------------
+   GLOBAL FONT IMPORT
+----------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* --------------------------------
+   GLOBAL RESET / BODY STYLES
+----------------------------------*/
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lexend', sans-serif;
+  font-family: "DM Serif Display", serif !important;
   background-color: #0a0a0a;
   color: white;
   overflow-x: hidden;
 }
 
-/* ------------------------------
-   Loader Styles
---------------------------------*/
+/* --------------------------------
+   DM SERIF FONT CLASSES
+----------------------------------*/
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-serif-display-regular-italic {
+  font-family: "DM Serif Display", serif !important;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* --------------------------------
+   LOADER STYLES
+----------------------------------*/
 .loader-box {
   width: 180px;
   height: 180px;
@@ -20,7 +40,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* hides spinning border outside box */
+  overflow: hidden;
 }
 
 .loader-box img {
@@ -29,7 +49,6 @@ body {
   z-index: 2;
 }
 
-/* Spinning border effect */
 .border-runner::before {
   content: "";
   position: absolute;
@@ -46,17 +65,13 @@ body {
 }
 
 @keyframes borderRunEmerging {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
-/* ------------------------------
-   Story Cards
---------------------------------*/
+/* --------------------------------
+   STORY CARDS
+----------------------------------*/
 .story-card {
   position: relative;
   height: 350px;
@@ -79,7 +94,9 @@ body {
   }
 }
 
-
+/* --------------------------------
+   BUTTONS
+----------------------------------*/
 button {
   transition: none !important;
 }
@@ -100,4 +117,12 @@ button {
   background-color: #d9534f;
   border: 2px solid #d9534f;
   color: white;
+}
+
+/* --------------------------------
+   ANIMATIONS
+----------------------------------*/
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }

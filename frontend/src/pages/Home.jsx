@@ -113,7 +113,7 @@ export default function Home() {
 
                       {/* title */}
                       <div className="absolute bottom-0 w-full bg-black/60 p-3">
-                        <h3 className="font-semibold text-sm truncate">{s.title}</h3>
+                        <h3 className="text-lg">{s.title}</h3>
                       </div>
                     </div>
                   </Link>
