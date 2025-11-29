@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function Manage() {
   const [stories, setStories] = useState([]);
@@ -82,12 +83,14 @@ export default function Manage() {
               <div className="flex justify-between gap-4 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200">
                 
                 {/* FIXED EDIT LINK */}
-                <a
-                  href={`/edit-story/${s.id}`}
+
+                <Link
+                  to={`/edit-story/${s.id}`}
                   className="w-10 h-10 flex items-center justify-center bg-green-600 rounded-full"
                 >
                   <i className="fa-solid fa-pen"></i>
-                </a>
+                </Link>
+
 
                 <button
                   onClick={() => deleteStory(s.id)}
