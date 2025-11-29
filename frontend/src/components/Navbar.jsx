@@ -43,13 +43,13 @@ export default function Navbar() {
     {
       name: "Stories",
       icon: StoriesIcon,
-      link: "https://youtube.com",
+      link: "https://stories-ohht.onrender.com",
       tooltip: "Adult World",
     },
     {
       name: "Videohub",
       icon: VideohubIcon,
-      link: "https://facebook.com",
+      link: "https://videohub-qofd.onrender.com/",
       tooltip: "VideoHub",
     },
     {
