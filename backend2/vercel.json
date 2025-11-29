@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "functions": {
-    "api/stories.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
+  "builds": [
+    { "src": "api/stories.js", "use": "@vercel/node" }
+  ],
   "routes": [
     { "src": "/api/stories", "dest": "/api/stories.js" }
   ]
