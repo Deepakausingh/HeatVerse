@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo.png";
+
 
 export default function Home() {
   const API = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
@@ -57,7 +59,7 @@ export default function Home() {
       {pageLoading && (
         <div className="fixed inset-0 bg-black flex justify-center items-center z-[9999]">
           <div className="loader-box w-[180px] h-[180px] relative flex justify-center items-center overflow-hidden">
-            <img src="/Logo.png" className="w-[95%] h-[95%] z-[2]" />
+            <img src={Logo} className="w-[95%] h-[95%] z-[2]" />
             <div className="border-runner absolute inset-[-5px]"></div>
           </div>
         </div>
