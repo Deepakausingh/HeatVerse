@@ -50,8 +50,8 @@ export default function StoryView() {
   if (!story) return <p className="text-center mt-10">Story not found</p>;
 
   return (
-    <div className="min-h-screen p-4 sm:p-6 lg:p-8 bg-black text-white flex flex-col items-center">
-      <div className="max-w-3xl w-full bg-black p-4 border border-gray-800 shadow-2xl space-y-4">
+    <div className="min-h-screen p-4 sm:p-6 lg:p-8 bg-black text-white flex flex-col items-center mb-16">
+      <div className="max-w-3xl w-full bg-black p-4 border border-gray-800 shadow-2xl space-y-4 ">
 
         {/* Title */}
         <h1 className="text-3xl font-bold text-center">{story.title}</h1>
